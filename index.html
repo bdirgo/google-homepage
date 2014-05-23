@@ -2,9 +2,70 @@
 <html>
   <head>
     <title>Google</title>
+    
+    <link href="/normalize.css" rel="stylesheet">
+  	<style>
+    body {
+      text-align: center;
+    }
+    img {
+      margin: 50px auto;
+    }
+    @media (max-width: 500px) {
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: grey;
+      color: white;
+      font-size: 12px;
+    }
+  </style>
   </head>
   <body>
-    <img src="https://www.google.com/images/srpr/logo11w.png">
-    <input type="text">
+    <img src="https://www.google.com/images/srpr/logo11w.png"><br>
+    <input id="myinputbox" type="text" autofocus><br>
+  	<input type="submit">
   </body>
+  <script type="text/javascript">
+  	window.onload = function() {
+  		var input = document.getElementById("myinputbox").focus();
+  	}
+  </script>
 </html>
+	<!-- <!DOCTYPE html>
+	<head>
+	  <title>Benjamin Dirgo</title>
+	  <style>
+	    body {
+	      text-align: center;
+	      background: url("http://upload.wikimedia.org/wikipedia/commons/a/a0/Grand_canyon_hermits_rest_2010.JPG");
+	      background-size: cover;
+	      background-position: center;
+	      color:white;
+	      font-family: helvetica;
+	    }
+	    p {
+	      font-size: 22px;
+	    }
+	    input {
+	      border: 0;
+	      padding: 10px;
+	      font-size: 18px;
+	    }
+	    input[type="submit"] {
+	      background: teal;
+	      color: white;
+	    }
+	  </style>
+	</head>
+	<body>
+	  <img src="./assets/myFace.gif">
+	  <p>Hi! I'm Benjamin Dirgo, an Arizona-based engineer. Say hello!</p>
+	  <input type="email" placeholder="Your email">
+	  <input type="submit">
+	</body>
+ -->
